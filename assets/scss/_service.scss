@@ -1,0 +1,123 @@
+@use "common" as *;
+
+.service-wrap {
+  padding: 35px;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  @include transition(0.3s);
+
+  &:hover {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 15px 35px rgb(0 0 0 / 10%);
+    box-shadow: 0px 15px 35px rgb(0 0 0 / 10%);
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+
+    .thumb {
+      color: #fff;
+      background: $theme-color;
+
+      &.color-2 {
+        color: #fff;
+        background-color: $theme-color-2;
+      }
+
+      &.color-3 {
+        color: #fff;
+        background-color: #36CC72;
+      }
+
+      &.color-4 {
+        color: #fff;
+        background-color: #8932F8;
+      }
+
+      &.color-5 {
+        color: #fff;
+        background-color: #FFCA40;
+      }
+
+      &.color-6 {
+        color: #fff;
+        background-color: #FF6D3D;
+      }
+    }
+
+    .content {
+      .title {
+        a {
+          color: $theme-color-2;
+        }
+      }
+
+      .read-more {
+        color: $theme-color-2;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .thumb {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    color: $theme-color;
+    text-align: center;
+    font-size: 45px;
+    border-radius: 5px;
+    @include transition(0.3s);
+    margin-bottom: 30px;
+    background-color: argb($theme-color, 0.1);
+
+    &.color-2 {
+      color: $theme-color-2;
+      background-color: argb($theme-color-2, 0.1);
+    }
+
+    &.color-3 {
+      color: #36CC72;
+      background-color: argb(#36CC72, 0.1);
+    }
+
+    &.color-4 {
+      color: #8932F8;
+      background-color: argb(#8932F8, 0.1);
+    }
+
+    &.color-5 {
+      color: #FFCA40;
+      background-color: argb(#FFCA40, 0.1);
+    }
+
+    &.color-6 {
+      color: #FF6D3D;
+      background-color: argb(#FF6D3D, 0.1);
+    }
+  }
+
+  .content {
+    .title {
+      font-size: 25px;
+
+      a {
+        color: #222;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .read-more {
+      font-size: 18px;
+      color: #222;
+
+      i {
+        margin-left: 5px;
+      }
+    }
+  }
+}

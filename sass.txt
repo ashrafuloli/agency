@@ -1,0 +1,5 @@
+
+sass --watch C:\xampp\htdocs\html-project\agency\assets\scss\main.scss:C:\xampp\htdocs\html-project\agency\assets\css\main.css
+
+// if minify css
+--style=compressed && postcss
